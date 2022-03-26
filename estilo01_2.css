@@ -1,0 +1,31 @@
+.div_pai{
+    background-color: #ff8800;
+    width: 500px;
+    height: 500px;
+}
+
+.div_filha{
+    background-color: #afffb3;
+    width: 600px;
+    height: 600px;
+}
+
+.paragrafo{
+    color:white;
+    background-color: #8f1d69;
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: 3000;
+}
+
+.div_irmao{
+    width: 250px;
+    height: 50%;
+    background-color: rgb(127, 208, 255);
+}
+
+.div_filho{
+    width: 20%;
+    height: 300px;
+    background-color: rgb(36, 24, 104);
+}
