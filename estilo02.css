@@ -1,0 +1,61 @@
+.div_pai{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_mae{
+    background-color: rgb(241, 204, 255);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_filha{
+    background-color: #ff8196;
+    height: 50px;
+    width: 250px;
+    border: 20px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_filha2{
+    background-color: aquamarine;
+    height: 44%;
+    width: 15%;
+}
+
+.body{
+    background-color: #a7a7a7;
+}
+
+.div_irmao{
+    background-color: white;
+    height: 500px;
+    width: 50%;
+    border: 10px dotted black;
+    display: flex;
+    justify-content: center;
+}
+
+.div_neta{
+    background-color: yellow;
+    height: 50px;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_neta2{
+    background-color: rgb(192, 91, 8);
+    height: 100px;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
