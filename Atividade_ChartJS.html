@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementando o ChartJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="display: flex; justify-content: center; ">
+
+    <div>
+        <canvas id="myChart_line" style="position: relative; height:40vh; width:40vw"></canvas>
+    </div>
+
+    <div>
+        <canvas id="myChart_bar" style="position: relative; height:40vh; width:40vw"></canvas>
+    </div>
+
+
+</body>
+
+<script>
+    const labels = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [20 + 10, 30 - 1, 40 - 12, 50 - 25, 60 - 38, 70 - 47, 80, 90],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: 'rgb(41, 156, 255)',
+            borderColor: 'rgb(41, 156, 255)',
+            data: [20 + 60, 30 + 52, 40 + 40, 50 + 35, 60 + 20, 70 + 13, 80, 90],
+        }
+        ]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+
+    const labels2 = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0 + 22, 10 + 14, 20 + 7, 30 - 7, 40 - 20, 50 - 32, 60, 70, 80, 90, 100],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: 'rgb(41, 156, 255)',
+            borderColor: 'rgb(41, 156, 255)',
+            data: [0 + 90, 10 + 79, 20 + 73, 30 + 57, 40 + 48, 50 + 32, 60, 70, 80, 90, 100],
+        }
+        ]
+    };
+
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+</script>
+
+
+<script>
+    const myChartLine = new Chart(
+        document.getElementById('myChart_line'),
+        config
+    );
+
+    const myChartBar = new Chart(
+        document.getElementById('myChart_bar'),
+        config2
+    );
+</script>
+
+</html>
